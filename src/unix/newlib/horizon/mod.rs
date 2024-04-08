@@ -134,6 +134,7 @@ pub const MSG_NOSIGNAL: ::c_int = 0;
 pub const SOL_CONFIG: ::c_uint = 65534;
 
 pub const _SC_PAGESIZE: ::c_int = 8;
+pub const _SC_PAGE_SIZE: ::c_int = _SC_PAGESIZE;
 pub const _SC_GETPW_R_SIZE_MAX: ::c_int = 51;
 
 pub const PTHREAD_STACK_MIN: ::size_t = 4096;
@@ -174,6 +175,11 @@ pub const SCHED_RR: ::c_int = 2;
 // For getrandom()
 pub const GRND_NONBLOCK: ::c_uint = 0x1;
 pub const GRND_RANDOM: ::c_uint = 0x2;
+
+pub const PROT_NONE: ::c_int = 0;
+pub const PROT_READ: ::c_int = 1;
+pub const PROT_WRITE: ::c_int = 2;
+pub const PROT_EXEC: ::c_int = 4;
 
 // Horizon OS works doesn't or can't hold any of this information
 safe_f! {
